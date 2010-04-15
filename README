@@ -1,0 +1,15 @@
+===============
+Nested Sampling
+===============
+
+An extremely simple nested sampling routine based on code
+by Dr. John Skilling. Nested sampling is an alternative
+(improved?) MCMC approach to finding maximal posterior
+solutions to Bayesian problems. 
+
+This code uses the idea of 'eggs' classes  which hold all 
+information about the problem. Multiple eggs (held in a 
+utility class 'basket') roll around the nest searching
+for the optimal solution. On each iteration the egg with 
+the poorest likelihood is rejected in favouor of an 
+evolved copy of one of the eggs with a better likelihood.
